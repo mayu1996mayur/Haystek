@@ -1,0 +1,135 @@
+
+
+body {
+    background-color: rgb(67, 175, 247);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#header {
+    background-color: rgb(67, 175, 247);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 500px;
+}
+
+#person-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.person-box {
+    display: flex;
+    width: max-content;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%
+}
+
+.person-number {
+    font-size: 1.5rem;
+    background-color: rgb(59, 196, 103);
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.person-info {
+    display: flex;
+    flex-direction: column;
+    width: 300%;
+}
+
+.name {
+    
+    background-color:rgb(149, 187, 204);
+    color:black;
+    padding: 10px;
+    border-top-right-radius: 10px;
+}
+
+.location {
+    
+    background-color: white;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);   
+}
+
+
+#next-person {
+    background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 400px;  
+}
+
+#people-shown {
+    color: whitesmoke;
+    background-color: rgb(67, 175, 247);
+}
+
+#next-person:hover {
+    background-color: #ff6600;
+}
+#people-shown{
+    color:whitesmoke;
+    background-color: rgb(67, 175, 247);
+}
+
+.person-count {
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        margin-left:50px; 
+    }
+
+    .person-box {
+        display: flex;
+    width: max-content;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    }
+
+    .person-info {
+        display: flex;
+        flex-direction: column;
+        width: 300%;
+    }
+
+    #next-person {
+        background-color: orange;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 50px;
+    }
+}
